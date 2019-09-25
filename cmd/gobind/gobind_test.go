@@ -25,12 +25,12 @@ var tests = []struct {
 	// external tools such as javap.
 	reverse bool
 }{
-	{"ObjC-Testpkg", "objc", "golang.org/x/mobile/bind/testdata/testpkg", "", false},
-	{"Java-Testpkg", "java", "golang.org/x/mobile/bind/testdata/testpkg", "", false},
-	{"Go-Testpkg", "go", "golang.org/x/mobile/bind/testdata/testpkg", "", false},
-	{"Java-Javapkg", "java", "golang.org/x/mobile/bind/testdata/testpkg/javapkg", "android", true},
-	{"Go-Javapkg", "go", "golang.org/x/mobile/bind/testdata/testpkg/javapkg", "android", true},
-	{"Go-Cgopkg", "go,java,objc", "golang.org/x/mobile/bind/testdata/cgopkg", "android", false},
+	{"ObjC-Testpkg", "objc", "github.com/StartisIOT/gomobile/bind/testdata/testpkg", "", false},
+	{"Java-Testpkg", "java", "github.com/StartisIOT/gomobile/bind/testdata/testpkg", "", false},
+	{"Go-Testpkg", "go", "github.com/StartisIOT/gomobile/bind/testdata/testpkg", "", false},
+	{"Java-Javapkg", "java", "github.com/StartisIOT/gomobile/bind/testdata/testpkg/javapkg", "android", true},
+	{"Go-Javapkg", "go", "github.com/StartisIOT/gomobile/bind/testdata/testpkg/javapkg", "android", true},
+	{"Go-Cgopkg", "go,java,objc", "github.com/StartisIOT/gomobile/bind/testdata/cgopkg", "android", false},
 }
 
 var gobindBin string
@@ -47,7 +47,7 @@ func testMain(m *testing.M) int {
 	bin.Close()
 	defer os.Remove(bin.Name())
 	if runtime.GOOS != "android" {
-		if out, err := exec.Command(goBin(), "build", "-o", bin.Name(), "golang.org/x/mobile/cmd/gobind").CombinedOutput(); err != nil {
+		if out, err := exec.Command(goBin(), "build", "-o", bin.Name(), "github.com/StartisIOT/gomobile/cmd/gobind").CombinedOutput(); err != nil {
 			log.Fatalf("gobind build failed: %v: %s", err, out)
 		}
 		gobindBin = bin.Name()

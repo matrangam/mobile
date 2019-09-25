@@ -29,12 +29,12 @@ import (
 	"runtime"
 	"sync"
 
-	"golang.org/x/mobile/event/key"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/geom"
+	"github.com/StartisIOT/gomobile/event/key"
+	"github.com/StartisIOT/gomobile/event/lifecycle"
+	"github.com/StartisIOT/gomobile/event/paint"
+	"github.com/StartisIOT/gomobile/event/size"
+	"github.com/StartisIOT/gomobile/event/touch"
+	"github.com/StartisIOT/gomobile/geom"
 )
 
 var initThreadID uint64

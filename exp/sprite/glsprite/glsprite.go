@@ -8,18 +8,18 @@
 //
 // Each sprite.Texture is loaded as a GL texture object and drawn
 // to the screen via an affine transform done in a simple shader.
-package glsprite // import "golang.org/x/mobile/exp/sprite/glsprite"
+package glsprite // import "github.com/StartisIOT/gomobile/exp/sprite/glsprite"
 
 import (
 	"image"
 	"image/draw"
 
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/exp/f32"
-	"golang.org/x/mobile/exp/gl/glutil"
-	"golang.org/x/mobile/exp/sprite"
-	"golang.org/x/mobile/exp/sprite/clock"
-	"golang.org/x/mobile/geom"
+	"github.com/StartisIOT/gomobile/event/size"
+	"github.com/StartisIOT/gomobile/exp/f32"
+	"github.com/StartisIOT/gomobile/exp/gl/glutil"
+	"github.com/StartisIOT/gomobile/exp/sprite"
+	"github.com/StartisIOT/gomobile/exp/sprite/clock"
+	"github.com/StartisIOT/gomobile/geom"
 )
 
 type node struct {

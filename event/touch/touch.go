@@ -4,8 +4,8 @@
 
 // Package touch defines an event for touch input.
 //
-// See the golang.org/x/mobile/app package for details on the event model.
-package touch // import "golang.org/x/mobile/event/touch"
+// See the github.com/StartisIOT/gomobile/app package for details on the event model.
+package touch // import "github.com/StartisIOT/gomobile/event/touch"
 
 // The best source on android input events is the NDK: include/android/input.h
 //

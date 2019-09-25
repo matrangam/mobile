@@ -12,8 +12,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/mobile/internal/importers"
-	"golang.org/x/mobile/internal/importers/java"
+	"github.com/StartisIOT/gomobile/internal/importers"
+	"github.com/StartisIOT/gomobile/internal/importers/java"
 )
 
 type (
@@ -943,7 +943,7 @@ import "C"
 
 import (
 	"Java"
-	_seq "golang.org/x/mobile/bind/seq"
+	_seq "github.com/StartisIOT/gomobile/bind/seq"
 )
 
 `

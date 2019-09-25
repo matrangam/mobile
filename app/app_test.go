@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/mobile/app/internal/apptest"
-	"golang.org/x/mobile/event/size"
+	"github.com/StartisIOT/gomobile/app/internal/apptest"
+	"github.com/StartisIOT/gomobile/event/size"
 )
 
 // TestAndroidApp tests the lifecycle, event, and window semantics of a
@@ -67,7 +67,7 @@ func TestAndroidApp(t *testing.T) {
 	}
 	defer os.Chdir(origWD)
 
-	run(t, "gomobile", "install", "golang.org/x/mobile/app/internal/testapp")
+	run(t, "gomobile", "install", "github.com/StartisIOT/gomobile/app/internal/testapp")
 
 	ln, err := net.Listen("tcp4", "localhost:0")
 	if err != nil {

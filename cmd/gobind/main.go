@@ -20,9 +20,9 @@ import (
 	"runtime"
 	"strings"
 
-	"golang.org/x/mobile/internal/importers"
-	"golang.org/x/mobile/internal/importers/java"
-	"golang.org/x/mobile/internal/importers/objc"
+	"github.com/StartisIOT/gomobile/internal/importers"
+	"github.com/StartisIOT/gomobile/internal/importers/java"
+	"github.com/StartisIOT/gomobile/internal/importers/objc"
 	"golang.org/x/tools/go/packages"
 )
 

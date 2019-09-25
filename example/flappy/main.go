@@ -12,17 +12,17 @@ import (
 	"math/rand"
 	"time"
 
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/event/key"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
-	"golang.org/x/mobile/event/size"
-	"golang.org/x/mobile/event/touch"
-	"golang.org/x/mobile/exp/gl/glutil"
-	"golang.org/x/mobile/exp/sprite"
-	"golang.org/x/mobile/exp/sprite/clock"
-	"golang.org/x/mobile/exp/sprite/glsprite"
-	"golang.org/x/mobile/gl"
+	"github.com/StartisIOT/gomobile/app"
+	"github.com/StartisIOT/gomobile/event/key"
+	"github.com/StartisIOT/gomobile/event/lifecycle"
+	"github.com/StartisIOT/gomobile/event/paint"
+	"github.com/StartisIOT/gomobile/event/size"
+	"github.com/StartisIOT/gomobile/event/touch"
+	"github.com/StartisIOT/gomobile/exp/gl/glutil"
+	"github.com/StartisIOT/gomobile/exp/sprite"
+	"github.com/StartisIOT/gomobile/exp/sprite/clock"
+	"github.com/StartisIOT/gomobile/exp/sprite/glsprite"
+	"github.com/StartisIOT/gomobile/gl"
 )
 
 func main() {

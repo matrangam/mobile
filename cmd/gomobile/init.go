@@ -78,7 +78,7 @@ func runInit(cmd *command) error {
 	}()
 
 	// Make sure gobind is up to date.
-	if err := goInstall([]string{"golang.org/x/mobile/cmd/gobind"}, nil); err != nil {
+	if err := goInstall([]string{"github.com/StartisIOT/gomobile/cmd/gobind"}, nil); err != nil {
 		return err
 	}
 
@@ -209,9 +209,9 @@ func installOpenAL(gomobilepath string) error {
 }
 
 var commonPkgs = []string{
-	"golang.org/x/mobile/gl",
-	"golang.org/x/mobile/app",
-	"golang.org/x/mobile/exp/app/debug",
+	"github.com/StartisIOT/gomobile/gl",
+	"github.com/StartisIOT/gomobile/app",
+	"github.com/StartisIOT/gomobile/exp/app/debug",
 }
 
 func mkdir(dir string) error {
